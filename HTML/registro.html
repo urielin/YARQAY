@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YARQAY REGISTRO</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="../CSS/style.css" rel="stylesheet" />
+
+</head>
+<body>
+        <div id="contenedor">
+            <div class="cabecera">
+                <img class="logo" src="../CSS/images/logo.png" alt="logo" />
+                <p id="irHacia">
+                  <a href="#">REGISTRATE</a>
+                  <a href="#">INICIO</a>
+                </p>
+            </div>
+            <div class="cuerpo">
+                <div class="regTitle">
+                    <h1>REGISTRATE</h1>
+                    <h4>y se parte de nosotros</h4>
+                </div>
+                <div class="orButtons">
+                  <input id="fbButton" type=button name="name" value="FACEBOOK">
+                  <input id="gooButton" type=button name="name" value="GOOGLE" >
+                </div>
+
+                <form id="regForm" action="#" method="post" >
+                  <div id="regDiv">
+                    <p>
+                      <input name="nombre" type="text" id="nombre" class="regInput" placeholder="Nombre" autofocus=""/ >
+                    </p>
+                    <p>
+                      <input name="apellidos" type="text" id="apellidos" class="regInput"placeholder="Apellidos" />
+                    </p>
+                    <p id=reg2Input>
+                      <select id="select" class="regInput" name="Sexo" >
+                        <option value="male">Masculino</option>
+                        <option value="female">Femenino</option>
+                      </select>
+                      <input name="fechanacimiento" type="date" id="fechanacimiento" class="regInput" placeholder="Fecha de nacimiento" />
+                    </pa>
+                    <p>
+                      <input name="correo" type="text" id="correo" class="regInput" placeholder="Email" />
+                    </p>
+                    <p>
+                      <input name="pass" type="password" id="pass" class="regInput" placeholder="Contraseña"/ >
+                    </p>
+                    <p>
+                      <input name="repass" type="password" id="repass" class="regInput" placeholder="Repite contraseña" />
+                    </p>
+                    <p>
+                      <input name="submit" type="submit" id="boton" value="Registrar" class="boton"/>
+                    </p>
+                  </div>
+
+                </form>
+            </div>
+        </div><!-- fin contenedor -->
+</body>
+
+</html>
