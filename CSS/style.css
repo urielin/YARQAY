@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,800italic,700);
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background:#181907;
+  font-size:14px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+.contenedor{
+  position: relative;
+  background-color:black;
+  width: 100%;
+  height: 100%;
+}
+
+.cabecera{
+  position: relative;
+  background-color: black;
+  color:white;
+  font-size: 20px;
+  padding: 10px 50px 0px 50px;
+  height:45px;
+  display: flex;
+  justify-content: space-between;
+}
+img.logo{
+    width: 70px;
+    height: 30px;
+}
+
+div.irHacia{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cuerpo{
+    position: relative;
+    padding: 0px 33% 0px 33%;
+    background-image: url(images/fondo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.regTitle{
+  padding: 35px;
+  text-align: center;
+  font-weight: bold;
+}
+.orButtons{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#regDiv{
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.regInput{
+    width: 91.5%;
+    font-weight: lighter;
+    background-color: white;
+    color: grey;
+    padding:10px 17px;
+    margin:5px 0 ;
+    font-size: 16px;
+
+}
+#reg2Input{
+  display: flex;
+  justify-content: space-between;
+}
+
+.boton{
+  outline: none;
+  border: 0;
+  padding: 15px 0px 15px 0px;
+  background-color: #00d455;
+  color: white;
+  width: 65%;
+  font-size: 12px;
+}
+
+#regDiv > div{
+  width: 100%;
+}
+
+#btnRegister{
+  margin: 15px;
+  padding: 15px 0;
+}
+
+#btnRegister:hover{
+  cursor: pointer;
+}
+
+#fbButton:hover, #gooButton:hover{
+  cursor: pointer;
+}
+
+
+#fbButton
+{
+  background-color: #3b5998;
+  background-image: url(images/facebook.svg);
+  background-size: 24px 35px;
+  background-position: 35px 7px;
+  background-repeat: no-repeat;
+  color: white;
+  width: 300px;
+  padding: 15px 0px 15px 0px;
+  outline: none;
+  border: 0;
+  margin: 0 5px;
+}
+
+
+
+
+#gooButton
+{
+  background-color: #cd1818;
+  background-image: url(images/google+.svg);
+  background-size: 28px 40px;
+  background-position: 35px 5px;
+  background-repeat: no-repeat;
+  color: white;
+  width: 300px;
+  padding: 10px 0px 10px 0px;
+  outline: none;
+  border: 0;
+  margin: 0 5px;
+
+}
+
+span #select{
+  width: 120px;
+}
+span #fechanacimiento{
+  width: 180px;
+}
+
+.regTitle > h4{
+  font-weight: lighter;
+}
+
+body *{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+#regTitle > h1{
+  font-size:200%;
+}
+
+a{
+  font-size: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+option{
+    color: inherit;
+    font-family: 'Open Sans', sans-serif;
+}
