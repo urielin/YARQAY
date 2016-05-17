@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,800italic,700);
 body{
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
   padding: 0px;
   background:#181907;
+=======
+body{
+  padding: 0px;
+  background:#181907;
+  font-family:Arial, Helvetica, sans-serif;
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
   font-size:14px;
   height: auto;
   display: flex;
@@ -11,17 +18,29 @@ body{
 }
 
 
+<<<<<<< HEAD
 .contenedor{
   position: relative;
   background-color:black;
   width: 100%;
   height: 100%;
+=======
+#contenedor{
+  position: relative;
+  background-color:black;
+  width: 100%;
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
 }
 
 .cabecera{
   position: relative;
+<<<<<<< HEAD
   background-color: black;
   color:white;
+=======
+  color:white;
+  font-family: sans-serif;
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
   font-size: 20px;
   padding: 10px 50px 0px 50px;
   height:45px;
@@ -33,24 +52,38 @@ img.logo{
     height: 30px;
 }
 
+<<<<<<< HEAD
 div.irHacia{
   width: 200px;
   display: flex;
   justify-content: space-between;
+=======
+p#irHacia{
+  width: auto;
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
 }
 
 .cuerpo{
     position: relative;
+<<<<<<< HEAD
     padding: 0px 33% 0px 33%;
+=======
+    padding: 0px 30% 0px 30%;
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
     background-image: url(images/fondo.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
 }
 .regTitle{
+<<<<<<< HEAD
   padding: 35px;
   text-align: center;
   font-weight: bold;
+=======
+  padding: 42px;
+  text-align: center;
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
 }
 .orButtons{
   display: flex;
@@ -65,6 +98,7 @@ div.irHacia{
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+<<<<<<< HEAD
 }
 .regInput{
     width: 91.5%;
@@ -74,6 +108,16 @@ div.irHacia{
     padding:10px 17px;
     margin:5px 0 ;
     font-size: 16px;
+=======
+  overflow: hidden;
+}
+.regInput{
+    width: 100%;
+    background-color: white;
+    color: grey;
+    font:bold 14px Arial;
+    padding:10px 10px;
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
 
 }
 #reg2Input{
@@ -82,6 +126,7 @@ div.irHacia{
 }
 
 .boton{
+<<<<<<< HEAD
   outline: none;
   border: 0;
   padding: 15px 0px 15px 0px;
@@ -109,11 +154,20 @@ div.irHacia{
 }
 
 
+=======
+  padding: 10px 0px 10px 0px;
+  background-color: #00d455;
+  color: white;
+  width: 90%;
+  font-size: 12px;
+}
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
 #fbButton
 {
   background-color: #3b5998;
   background-image: url(images/facebook.svg);
   background-size: 24px 35px;
+<<<<<<< HEAD
   background-position: 35px 7px;
   background-repeat: no-repeat;
   color: white;
@@ -127,20 +181,35 @@ div.irHacia{
 
 
 
+=======
+  background-position: 10px 2px;
+  background-repeat: no-repeat;
+  color: white;
+  width: 300px;
+  padding: 10px 0px 10px 0px;
+}
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
 #gooButton
 {
   background-color: #cd1818;
   background-image: url(images/google+.svg);
   background-size: 28px 40px;
+<<<<<<< HEAD
   background-position: 35px 5px;
+=======
+  background-position: 10px -2px;
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
   background-repeat: no-repeat;
   color: white;
   width: 300px;
   padding: 10px 0px 10px 0px;
+<<<<<<< HEAD
   outline: none;
   border: 0;
   margin: 0 5px;
 
+=======
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
 }
 
 span #select{
@@ -150,6 +219,7 @@ span #fechanacimiento{
   width: 180px;
 }
 
+<<<<<<< HEAD
 .regTitle > h4{
   font-weight: lighter;
 }
@@ -163,6 +233,25 @@ body *{
 #regTitle > h1{
   font-size:200%;
 }
+=======
+body *{
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+h1,h4{
+    color: white;
+}
+h1{
+  font-size:200%;
+}
+p{
+  position: relative;
+  padding-top: 5px;
+  width: 100%;
+  height: 40px;
+}
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
 
 a{
   font-size: 12px;
@@ -170,6 +259,11 @@ a{
   color: inherit;
 }
 option{
+<<<<<<< HEAD
     color: inherit;
     font-family: 'Open Sans', sans-serif;
+=======
+    width: inherit;
+    height: inherit;
+>>>>>>> 20f70a97180997f6e1ae3fbcdcbf80ce912a4cea
 }
