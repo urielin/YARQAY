@@ -1,0 +1,100 @@
+doctype html
+html 
+  head(lang="es")
+    meta(charset="utf-8")
+    title Registra tu restaurante
+    script(type="text/javascript" src="./javascript/jquery-1.12.4.js")
+    script(type="text/javascript" src="./javascript/multi_form.js")
+    link(rel="stylesheet" type="text/css" href="./stylesheets/styles.css")
+    link(rel="stylesheet" type="text/css" href="./stylesheets/normalize.css")
+  body
+    .topbar
+      img.logo(src="images/logo.png" alt="logo")
+      .goto
+        a(href="#") MENU 1
+        a(href="#") MENU 2
+    .container
+      .title
+        h1  Registra a tu restaurante
+        h3  y se parte de yarqay  
+      .bar
+        span#baricon1.bar-icon 1
+        span#bar1.bar-progress
+        span#baricon2.bar-icon 2
+        .bar-icon-name
+          span
+            p  Mis 
+              br 
+              |  datos
+          span
+            p  Mi 
+              br
+              | restaurante
+      form
+        #register-personal
+          .register
+            .col
+              label(for="nombre") Nombre
+              input.register-input(type="text" id="nombre"  placeholder="") 
+              label(for="apellido") Apellido
+              input.register-input(type="text" id="apellido"  placeholder="")
+              .row
+                .col
+                  label(for="telefono") Telefono
+                  input.register-input-half(type="text" id="telefono"  placeholder="")
+                .col
+                  label(for="celular") Celular
+                  input.register-input-half(type="text" id="celular"  placeholder="")
+              label(for="documento") Documento
+              .row-left
+                .row
+                  input.register-rbtn(type="radio" id="DNI" name="register-rbtn" placeholder="aasd")
+                  label(for="DNI") DNI
+                .row
+                  input.register-rbtn(type="radio" id="RUT" name="register-rbtn" placeholder="")
+                  label(for="RUT") RUT
+              input.register-input(type="text" id="documento"  placeholder="")
+            .col
+              .row
+                .col
+                  label(for="pais") Pais
+                  input.register-input-half(type="text" id="pais"  placeholder="")
+                .col
+                  label(for="ciudad") Ciudad
+                  input.register-input-half(type="text" id="ciudad"  placeholder="")
+              label(for="email") e-mail
+              input.register-input(type="text" id="email"  placeholder="")
+              label(for="pass") Contraseña
+              input.register-input(type="password" id="pass"  placeholder="")
+              label(for="repass") Repetir contraseña
+              input.register-input(type="password" id="repass"  placeholder="")
+          input.register-btn(type="button" value="Siguiente >" onclick="show_next('register-personal','register-restaurant','baricon2')")
+        #register-restaurant
+          .register
+            .col
+              label(for="name") Nombre
+              input.register-input(type="text" id="name"  placeholder="") 
+              label(for="address") Direccion
+              input.register-input(type="text" id="address"  placeholder="")
+              .row
+                .col
+                  label(for="rut") RUT
+                  input.register-input-half(type="text" id="rut"  placeholder="")
+                .col
+                  label(for="phone") telefono
+                  input.register-input-half(type="text" id="phone"  placeholder="")
+              label Horario de atencion
+              .row
+                .col
+                  label(for="start") Inicio
+                  input.register-input-half#start(type="time" name="start")
+                .col
+                  label(for="end") Cierre
+                  input.register-input-half#end(type="time" name="end")
+            .col
+              label(for="speciality") Especialidad
+              input.register-input(type="text" id="speciality"  placeholder="")
+              label(for="map") Mapa
+              input.register-input(type="text" id="map"  placeholder="")
+          input.register-btn(type="button" value="Anterior" onclick="show_prev('register-personal','baricon2')")
+          input.register-btn(type="button" value="Finalizar" ) 

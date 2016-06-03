@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html> 
+  <head lang="es">
+    <meta charset="utf-8">
+    <title>Registra tu restaurante</title>
+    <script type="text/javascript" src="./javascript/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="./javascript/multi_form.js"></script>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/normalize.css">
+  </head>
+  <body>
+    <div class="topbar"><img src="images/logo.png" alt="logo" class="logo">
+      <div class="goto"><a href="#">MENU 1</a><a href="#">MENU 2</a></div>
+    </div>
+    <div class="container">
+      <div class="title">
+        <h1> Registra a tu restaurante</h1>
+        <h3> y se parte de yarqay  </h3>
+      </div>
+      <div class="bar"><span id="baricon1" class="bar-icon">1</span><span id="bar1" class="bar-progress"></span><span id="baricon2" class="bar-icon">2</span>
+        <div class="bar-icon-name"><span>
+            <p> Mis <br> datos</p></span><span>
+            <p> Mi <br>restaurante</p></span></div>
+      </div>
+      <form>
+        <div id="register-personal">
+          <div class="register">
+            <div class="col">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" placeholder="" class="register-input">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" placeholder="" class="register-input">
+              <div class="row">
+                <div class="col">
+                  <label for="telefono">Telefono</label>
+                  <input type="text" id="telefono" placeholder="" class="register-input-half">
+                </div>
+                <div class="col">
+                  <label for="celular">Celular</label>
+                  <input type="text" id="celular" placeholder="" class="register-input-half">
+                </div>
+              </div>
+              <label for="documento">Documento</label>
+              <div class="row-left">
+                <div class="row">
+                  <input type="radio" id="DNI" name="register-rbtn" placeholder="aasd" class="register-rbtn">
+                  <label for="DNI">DNI</label>
+                </div>
+                <div class="row">
+                  <input type="radio" id="RUT" name="register-rbtn" placeholder="" class="register-rbtn">
+                  <label for="RUT">RUT</label>
+                </div>
+              </div>
+              <input type="text" id="documento" placeholder="" class="register-input">
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <label for="pais">Pais</label>
+                  <input type="text" id="pais" placeholder="" class="register-input-half">
+                </div>
+                <div class="col">
+                  <label for="ciudad">Ciudad</label>
+                  <input type="text" id="ciudad" placeholder="" class="register-input-half">
+                </div>
+              </div>
+              <label for="email">e-mail</label>
+              <input type="text" id="email" placeholder="" class="register-input">
+              <label for="pass">Contraseña</label>
+              <input type="password" id="pass" placeholder="" class="register-input">
+              <label for="repass">Repetir contraseña</label>
+              <input type="password" id="repass" placeholder="" class="register-input">
+            </div>
+          </div>
+          <input type="button" value="Siguiente &gt;" onclick="show_next('register-personal','register-restaurant','baricon2')" class="register-btn">
+        </div>
+        <div id="register-restaurant">
+          <div class="register">
+            <div class="col">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" placeholder="" class="register-input">
+              <label for="address">Direccion</label>
+              <input type="text" id="address" placeholder="" class="register-input">
+              <div class="row">
+                <div class="col">
+                  <label for="rut">RUT</label>
+                  <input type="text" id="rut" placeholder="" class="register-input-half">
+                </div>
+                <div class="col">
+                  <label for="phone">telefono</label>
+                  <input type="text" id="phone" placeholder="" class="register-input-half">
+                </div>
+              </div>
+              <label>Horario de atencion</label>
+              <div class="row">
+                <div class="col">
+                  <label for="start">Inicio</label>
+                  <input id="start" type="time" name="start" class="register-input-half">
+                </div>
+                <div class="col">
+                  <label for="end">Cierre</label>
+                  <input id="end" type="time" name="end" class="register-input-half">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <label for="speciality">Especialidad</label>
+              <input type="text" id="speciality" placeholder="" class="register-input">
+              <label for="map">Mapa</label>
+              <input type="text" id="map" placeholder="" class="register-input">
+            </div>
+          </div>
+          <input type="button" value="Anterior" onclick="show_prev('register-personal','baricon2')" class="register-btn">
+          <input type="button" value="Finalizar" class="register-btn">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
