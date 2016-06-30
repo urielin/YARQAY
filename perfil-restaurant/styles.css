@@ -1,0 +1,51 @@
+.container{
+  padding-top: 80px;
+  padding-left: 150px;
+  height: 200%;
+}
+.col {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-wrap{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.restaurant-images{
+  margin-bottom: 150px;
+}
+.restaurant-img{
+  width: 500px;
+  height: 400px;
+}
+
+.restaurant-informacion{
+  margin-bottom: 150px;
+}
+p.subtitle{
+  font-weight: bold;
+  font-size: 20px
+
+}
+.restaurant-map{
+  width: 300px;
+  height: 400px;
+}
+
+button[name='save-profile']{
+  width: 300px;
+  height: 70px;
+}
+.profile-map{
+  position: fixed;
+  right: 150px;
+  top: 100px
+}
