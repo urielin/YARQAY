@@ -1,0 +1,483 @@
+/* CSS declarations go here */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,800italic,700);
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size:14px;
+
+  height: 100%;
+}
+a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.home-restaurant{
+    overflow: hidden;
+}
+
+.home-restaurant img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/background-home-restaurant.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+
+}
+
+.container{
+  position: relative;
+  background-color:black;
+  width: 100%;
+  height: 100%;
+}
+
+.header{
+  position: relative;
+  color:white;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 10px 50px 0px 50px;
+  height:60px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-header{
+
+}
+
+img.logo{
+    width: 70px;
+    height: 30px;
+}
+
+div.irHacia{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cuerpo{
+    position: relative;
+    padding: 0px 33% 0px 33%;
+    background-image: url('../images/fondo.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.regTitle{
+  padding: 35px;
+  text-align: center;
+  font-weight: bold;
+}
+.orButtons{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#regDiv{
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.regInput{
+    width: 91.5%;
+    font-weight: lighter;
+    background-color: white;
+    color: grey;
+    padding:10px 17px;
+    margin:5px 0 ;
+    font-size: 16px;
+
+}
+#reg2Input{
+  display: flex;
+  justify-content: space-between;
+}
+
+.boton{
+  outline: none;
+  border: 0;
+  padding: 15px 0px 15px 0px;
+  background-color: #00d455;
+  color: white;
+  width: 65%;
+  font-size: 12px;
+}
+
+#regDiv > div{
+  width: 100%;
+}
+
+#btnRegister{
+  margin: 15px;
+  padding: 15px 0;
+}
+
+#btnRegister:hover{
+  cursor: pointer;
+}
+
+#fbButton:hover, #gooButton:hover{
+  cursor: pointer;
+}
+
+
+#fbButton
+{
+  background-color: #3b5998;
+  background-image: url('../images/facebook.svg');
+  background-size: 24px 35px;
+  background-position: 35px 7px;
+  background-repeat: no-repeat;
+  color: white;
+  width: 300px;
+  padding: 15px 0px 15px 0px;
+  outline: none;
+  border: 0;
+  margin: 0 5px;
+}
+
+
+#gooButton
+{
+  background-color: #cd1818;
+  background-image: url('../images/google+.svg');
+  background-size: 28px 40px;
+  background-position: 35px 5px;
+  background-repeat: no-repeat;
+  color: white;
+  width: 300px;
+  padding: 10px 0px 10px 0px;
+  outline: none;
+  border: 0;
+  margin: 0 5px;
+
+}
+
+span #select{
+  width: 120px;
+}
+span #fechanacimiento{
+  width: 180px;
+}
+
+.regTitle > h4{
+  font-weight: lighter;
+}
+
+body *{
+  margin: 0;
+  padding: 0;
+}
+
+#regTitle > h1{
+  font-size:200%;
+}
+
+a{
+  font-size: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+option{
+    color: inherit;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-login{
+  height: 230px;
+  background: #edeff1;
+  margin: 0px auto;
+  padding-top: 20px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.form-login .form-input{
+  display: block;
+  width: 309px;
+  height: 35px;
+  margin: 15px auto;
+  background: #fff;
+  border: 0px;
+  padding: 5px;
+  font-size: 16px;
+   border: 2px solid #fff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.form-login .form-input:focus{
+    outline:none;
+  border: 2px solid #FFE500
+}
+
+.form-login input[type="submit"]{
+  display: block;
+  background: #FC0;
+  width: 314px;
+  padding: 12px;
+  cursor: pointer;
+  color: #fff;
+  border: 0px;
+  margin: auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+.form-login input[type="submit"]:hover{
+  background: #FFC200
+}
+
+.form-login a{
+  text-align: center;
+  font-family: Arial;
+  color: gray;
+  display: block;
+  margin: 15px auto;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 12px;
+}
+
+.form-login a:hover{
+  color: #1abc9d;
+}
+
+
+::-webkit-input-placeholder {
+   color: gray;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: gray;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: gray;
+}
+
+:-ms-input-placeholder {
+   color: gray;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 15% 0 0;
+  margin: auto;
+}
+.form {
+  font-family: "Roboto", sans-serif;
+
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #FC0;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #FFC200;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #FFCC00;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+.col {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-wrap{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.searcher{
+
+}
+
+.searcher-options{
+  background-color: #e2e2e2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 23%;
+  padding-right: 23%;
+  height: 200px;
+}
+.search-txt{
+  height: 70px;
+  width: 700px
+}
+.search-btn{
+  background-image: url(search.svg);
+  background-repeat: no-repeat;
+  background-size: 45px,45px;
+  background-color: yellow;
+  background-position: center;
+  width: 70px;
+  height: 70px;
+}
+.search-foodtype{
+  height: 45px;
+  width: 240px;
+  margin-left: 35px;
+  margin-right: 35px
+}
+.search-cbox{
+  width: 30px;
+  height: 30px;
+}
+.searcher-cards{
+  background-color: #c6c6c6;
+  padding: 20px
+}
+.search-card{
+  background-color: #e2e2e2;
+  height: 250px;
+  width: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-title{
+
+}
+.ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los `a`)
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo,
+		pero de esta manera (siempre que no le demos padding),
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 2rem;
+
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: yellow;
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+.card-img{
+  height: 210px;
+  width: 170px;
+}
+.card-subtitle{
+  font-weight: bold;
+}
+.card-content{
+
+}
