@@ -1,6 +1,5 @@
 .container{
-  padding-top: 80px;
-  padding-left: 150px;
+  padding: 160px;
   height: 200%;
 }
 .col {
@@ -19,15 +18,19 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.restaurant-images{
+
+.profile-map{
+
+}
+.profile-images{
   margin-bottom: 150px;
 }
 .restaurant-img{
-  width: 500px;
-  height: 400px;
+  width: 300px;
+  height: 250px;
 }
 
-.restaurant-informacion{
+.profile-informacion{
   margin-bottom: 150px;
 }
 p.subtitle{
@@ -35,17 +38,53 @@ p.subtitle{
   font-size: 20px
 
 }
-.restaurant-map{
-  width: 300px;
-  height: 400px;
+.img-restaurant-map{
+  width: 550px;
+  height: 350px;
 }
 
 button[name='save-profile']{
   width: 300px;
   height: 70px;
 }
-.profile-map{
-  position: fixed;
-  right: 150px;
-  top: 100px
+
+
+.ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los `a`)
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo,
+		pero de esta manera (siempre que no le demos padding),
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 2rem;
+
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: yellow;
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+
+}
+
+li{
+  list-style: none;
 }
