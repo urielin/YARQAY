@@ -1,0 +1,142 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
+
+.container{
+  height: 200%;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+
+
+  /*background-color: #95a5a6;*/
+}
+.col {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-wrap{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.profile-map{
+
+}
+.profile-images{
+  width: auto;
+  height: 100vh;
+}
+.restaurant-img{
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+.profile-informacion{
+  margin-left: 4em;
+  margin-right:4em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.profile-services{
+  margin-left: 200px;
+  margin-right:200px;
+  margin-top: 140px;
+  margin-bottom: 140px;
+  background-color: #f2f2f2;
+}
+
+
+p.rest-subtitle{
+  font-weight: bold;
+  font-size:
+}
+
+h1.rest-title{
+  font-size: 5em;
+  font-weight: 200;
+  line-height: 100%;
+  color: #fed42a
+}
+
+.img-restaurant-map{
+  min-width: 85vw;
+  height: 250px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+button[name='save-profile']{
+  width: 300px;
+  height: 70px;
+}
+
+
+.ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los `a`)
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo,
+		pero de esta manera (siempre que no le demos padding),
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 2rem;
+
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: #f6d300;
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+
+}
+
+li{
+  list-style: none;
+}
+
+button{
+  font-weight: bold;
+  background-color:#ffffff;
+  width: 200px;
+  height: 55px;
+  margin-bottom: 20px !important;
+s
+}
+
+button:hover{
+  color: #f6d300;
+  background-color:#f2f2f2;
+}
+.profile-btn{
+  margin-left: 4em
+}
+.btn-save{
+  background-color: #f6d300;
+  color: white;
+}
+.btn-comend{
+  color: #f6d300
+}
