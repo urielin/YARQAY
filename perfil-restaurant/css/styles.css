@@ -30,6 +30,12 @@
   flex-wrap: wrap;
 }
 
+.row-center{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 div[class^="profile-"]{
   position: relative;
   min-width: 100vw;
@@ -47,7 +53,7 @@ div[class^="profile-"]{
 }
 
 .rest{
-
+  padding: 4em;
 }
 .profile-services{
   background: #888 url(./images/img-services.png) no-repeat center center;
@@ -71,7 +77,8 @@ p{
 h1.rest-title{
   font-size: 4em;
   font-weight: 200;
-  color: #fed42a
+  color: #fed42a;
+  margin: 0;
 }
 
 .img-restaurant-map{
@@ -182,5 +189,5 @@ button:hover{
 .commend-icon{
   width: 1.2em;
   height: 1.2em;
-  margin: 0 0.2em 0 0.6em 
+  margin: 0 0.2em 0 0.6em
 }
