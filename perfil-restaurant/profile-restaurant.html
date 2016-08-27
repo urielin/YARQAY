@@ -10,8 +10,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-          <div class="profile-informacion col">
+      <div class="profile-information row">
+          <div class="rest col">
             <h1 class="rest-title">LOBO MARINO</h1>
             <div class="ec-stars-wrapper">
             	<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
@@ -22,36 +22,65 @@
             </div>
             <p class="rest-direction">Direccion</p>
             <p class="rest-horario">Horario</p>
-            <div class="profile-btn col">
+            <div class="rest-btn col">
               <button class="btn-save" type="button" name="button">Guardar</button>
-              <button class="btn-comend" type="button" name="button">Recomendar</button>
+              <button class="btn-commend" type="button" name="button">Recomendar</button>
             </div>
           </div>
-          <div class="profile-images">
+          <div class="rest-images">
             <ul class="bxslider">
-              <li><img class="restaurant-img" src="./css/images/img-rest.jpg" alt="" /></li>
-              <li><img class="restaurant-img" src="./css/images/img-rest.jpg" alt="" /></li>
-              <li><img class="restaurant-img" src="./css/images/img-rest.jpg" alt="" /></li>
+              <li><img class="rest-img" src="./css/images/img-rest.jpg" alt="" /></li>
+              <li><img class="rest-img" src="./css/images/img-rest.jpg" alt="" /></li>
+              <li><img class="rest-img" src="./css/images/img-rest.jpg" alt="" /></li>
             </ul>
           </div>
       </div>
       <div class="profile-map">
         <img class="img-restaurant-map" src="./css/images/map.jpg" alt="" />
-
-
       </div>
       <div class="profile-services row">
-        <p class="rest-subtitle">Servicios</p><br>
-        <div class="col restaurant-services">
-          <p class="">Wifi</p><br>
-          <p class="">Estacionamiento</p>
-        </div>
-        <div class="restaurant-commends">
+        <div class="">
+          <p class="rest-subtitle" >Servicios</p>
+          <div class="col restaurant-services">
+            <div class="service-wifi row-left">
+              <img class="img-services" src="./css/images/connection.svg" alt="" />
+              <p >Wifi</p>
+            </div>
+            <div class="service-estacionamiento row-left">
+              <img class="img-services" src="./css/images/automobile.svg" alt="" />
+              <p >Estacionamiento</p>
+            </div>
 
+          </div>
         </div>
+        <div class="">
+          <p class="rest-subtitle">Recomendaciones</p>
+        </div>
+
       </div>
-      <div class="profile-comments row">
-        <div class="restaurant-comment">
+      <div class="profile-commends col">
+        <div class="rest-commend row">
+          <div class="commend-avatar col">
+            <img class="avatar-img"src="./css/images/1.png" alt="" />
+            <p class="avatar-name">CIELO</p>
+          </div>
+          <div class="commend-content col">
+            <div class="content-date row-left">
+              <img class="commend-icon" src="./css/images/calendar.svg" alt="" />
+              <p>Lunes 26 de Julio de 2016 </p>
+            </div>
+            <p class="content-text">
+              Los platos de los recomiendo un monton me encanto el lugar y la comida es super deliciosa
+              Los platos de los recomiendo un monton me encanto el lugar y la comida es super deliciosa
+
+            </p>
+            <div class="content-heart row-left">
+              <img class="commend-icon" src="./css/images/heart.svg" alt="" />
+              <p>3</p>
+              <img class="commend-icon" src="./css/images/heart-broken.svg" alt="" />
+              <p>3</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

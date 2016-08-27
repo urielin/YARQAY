@@ -1,11 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
 
 .container{
-  height: 200%;
+  position: relative;
+  max-width: 100vw;
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
-
-
+  overflow: hidden;
   /*background-color: #95a5a6;*/
 }
 .col {
@@ -16,7 +16,12 @@
 }
 .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.row-left{
+  display: flex;
+  justify-content: flex-start;
 }
 
 .row-wrap{
@@ -25,57 +30,75 @@
   flex-wrap: wrap;
 }
 
-.profile-map{
+div[class^="profile-"]{
+  position: relative;
+  min-width: 100vw;
+  max-height: 100vh;
+  min-height: 50vh;
 
 }
-.profile-images{
-  width: auto;
-  height: 100vh;
+.rest-images{
+  max-width: 65vw;
+  min-height: 100vh;
 }
-.restaurant-img{
-  width: 100% !important;
+.rest-img{
+  width:  100vw !important;
   height: 100vh !important;
 }
 
-.profile-informacion{
-  margin-left: 4em;
-  margin-right:4em;
-  margin-top: 3em;
-  margin-bottom: 3em;
+.rest{
+
 }
 .profile-services{
-  margin-left: 200px;
-  margin-right:200px;
-  margin-top: 140px;
-  margin-bottom: 140px;
-  background-color: #f2f2f2;
+  background: #888 url(./images/img-services.png) no-repeat center center;
+  background-size: cover;
+  color: white;
+
 }
 
-
+.restaurant-services{
+  text-align: center
+}
 p.rest-subtitle{
   font-weight: bold;
-  font-size:
+  font-size:  1.5em;
+}
+
+p{
+  margin: 0;
 }
 
 h1.rest-title{
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 200;
-  line-height: 100%;
   color: #fed42a
 }
 
 .img-restaurant-map{
-  min-width: 85vw;
-  height: 250px;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  min-width: 100vw;
+  height: 50vh;
 }
 
+.img-services{
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 1em;
+}
 button[name='save-profile']{
   width: 300px;
   height: 70px;
 }
 
+.rest-btn{
+  margin-left: 4em
+}
+.btn-save{
+  background-color: #f6d300;
+  color: white;
+}
+.btn-commend{
+  color: #f6d300
+}
 
 .ec-stars-wrapper {
 	/* Espacio entre los inline-block (los hijos, los `a`)
@@ -93,7 +116,6 @@ button[name='save-profile']{
 	/* Volver a dar tamaño al texto */
 	font-size: 32px;
 	font-size: 2rem;
-
 	color: #888;
 }
 
@@ -110,7 +132,6 @@ button[name='save-profile']{
 ul{
   margin: 0;
   padding: 0;
-
 }
 
 li{
@@ -123,20 +144,43 @@ button{
   width: 200px;
   height: 55px;
   margin-bottom: 20px !important;
-s
+  border: solid #f6d300 2px;
 }
 
 button:hover{
-  color: #f6d300;
-  background-color:#f2f2f2;
-}
-.profile-btn{
-  margin-left: 4em
-}
-.btn-save{
-  background-color: #f6d300;
   color: white;
+  background-color:#f6d388;
 }
-.btn-comend{
-  color: #f6d300
+
+.rest-commend{
+  width: 40em;
+  height: 13em;
+}
+
+.commend-avatar{
+  text-align: center;
+  margin: 0.5em;
+}
+.avatar-img{
+  margin-top: 1em;
+  width: 7em;
+  height: 7em;
+}
+
+.commend-content{
+  margin: 0 2em 0 2em ;
+
+}
+.content-date{
+  line-height: normal;
+  font-weight: 100;
+}
+
+.content-heart{
+
+}
+.commend-icon{
+  width: 1.2em;
+  height: 1.2em;
+  margin: 0 0.2em 0 0.6em 
 }
