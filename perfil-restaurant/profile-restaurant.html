@@ -42,7 +42,7 @@
         <img class="img-restaurant-map" src="./css/images/map.jpg" alt="" />
       </div>
       <div class="profile-services row-center">
-        <div class="">
+        <div class="rest-services">
           <p class="rest-subtitle" >Servicios</p>
           <div class="col restaurant-services">
             <div class="service-wifi row-left">
@@ -56,12 +56,22 @@
 
           </div>
         </div>
-        <div class="">
+        <div class="rest-recommend">
           <p class="rest-subtitle">Recomendaciones</p>
-        </div>
+          <div class="rest-recommend-bar">
+            <div class="row">
+              <div id="bar-title" class="label">Corvina asada</div>
+              <div id="bar-label" class="label">1%</div>
+            </div>
+            <div id="myProgress" class="myProgress">
+              <div id="myBar" class="myBar"> </div>
+            </div>
+          </div>
 
+
+        </div>
       </div>
-      <div class="profile-commends col">
+      <div class="profile-commends row-wrap">
         <div class="rest-commend row">
           <div class="commend-avatar col">
             <img class="avatar-img"src="./css/images/1.png" alt="" />
@@ -92,5 +102,23 @@
     <!-- bxSlider Javascript file -->
     <script src="./js/jquery.bxslider.min.js"></script>
     <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="text/javascript">
+        move(90)
+        function move(widthActual) {
+        var elem = document.getElementById("myBar");
+        var label = document.getElementById("bar-label");
+        var widthInicial = 1;
+        var id = setInterval(frame, 10); //retraso
+        function frame() {
+            if (widthInicial >= widthActual) {
+                clearInterval(id);
+            } else {
+                widthInicial++;
+                elem.style.width = widthInicial + '%';
+                label.innerHTML = widthInicial * 1 + '%';
+            }
+        }
+        }
+    </script>
   </body>
 </html>
